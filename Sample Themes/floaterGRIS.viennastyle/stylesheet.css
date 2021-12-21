@@ -1,0 +1,110 @@
+body {	
+	background-color: #FFFFFF;
+	margin: 16px;
+}
+
+/* TITRE */
+.articleTitleStyle:before {
+  background: transparent url(tr.png) scroll no-repeat top right;
+  margin-bottom: 0;
+  height: 8px;
+  display: block;
+  border: none;
+  content: url(tl.png);
+  line-height: 0.1;
+  font-size: 1px;
+}
+.articleTitleStyle {	
+	background-color: #aaa;
+	font: bold 13px "Lucida Grande";
+	padding: 0 0 8px 0;
+}
+.articleTitleStyle a {
+	display: block;
+	margin: 0 8px;
+}
+.articleTitleStyle a:link, .articleTitleStyle a:visited {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 1px 3px #888;
+}
+.articleTitleStyle a:hover {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 1px 3px #222;
+}
+.articleTitleStyle a:active {
+	color: #ccc;
+	text-decoration: none;
+	text-shadow: 0 1px 3px #222;
+}
+
+/* DETAILS */
+.articleDetails {	
+	background-color: #ccc;
+	font: 9px "Lucida Grande";
+	margin: 0;
+	padding-top: 8px 0 0 0;
+}
+.articleDetails span {
+	display: block;
+	margin: 0 8px 2px 8px;
+}
+.feedLinkStyle:before {
+	content: "Source : ";
+	color: #888;
+	width: 38px;
+	display: block;
+	float: left;
+	text-align: right;
+	padding-right: 4px;
+}
+.articleDateStyle:before {
+	content: "Date : ";
+	color: #888;
+	width: 38px;
+	display: block;
+	float: left;
+	text-align: right;
+	padding-right: 4px;
+}
+.articleAuthorStyle:before {
+	content: "Auteur : ";
+	color: #888;
+	width: 38px;
+	display: block;
+	float: left;
+	text-align: right;
+	padding-right: 4px;
+	clear: both;
+}
+.articleDetails:after {
+	display: block;
+	line-height: 0.1;
+	font-size: 1px;
+	content:  url(bl.png);
+	margin: 2px 0 0 0;
+	height: 8px;
+	background: transparent url(br.png) scroll no-repeat bottom right;
+	padding: 0;
+	clear: both;
+}
+
+/* CONTENU */
+.articleBodyStyle {	
+	margin-top: 8px;
+	font: 11px "Lucida Grande";
+}
+blockquote {
+	color: #888;
+	font-style: italic;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+	padding: 8px 0;
+}
+p {
+	margin: 0 0 8px 0;
+}
+img {
+	margin: 0 8px 8px 0
+}
