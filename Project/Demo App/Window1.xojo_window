@@ -22,7 +22,7 @@ Begin Window Window1
    MinWidth        =   64
    Placement       =   0
    Resizeable      =   True
-   Title           =   "Untitled"
+   Title           =   "UINewsaViewer Demo"
    Visible         =   True
    Width           =   600
    Begin PushButton PushButton1
