@@ -271,8 +271,16 @@ Inherits DesktopHTMLViewer
 			    
 			    me.CreateSource
 			    
-			    me.GrantAccessToFolder me.mStyle
-			    me.LoadPage me.mSource, GetTemporaryFolderItem()
+			    #if TargetWindows
+			      DIM f As FolderItem = SpecialFolder.Temporary.Child(System.Microseconds.ToString + ".html")
+			      DIM t As TextOutputStream = TextOutputStream.Create(f)
+			      t.Write me.mSource
+			      t.Close
+			      me.LoadURL f.URLPath
+			    #else
+			      me.GrantAccessToFolder me.mStyle
+			      me.LoadPage me.mSource, GetTemporaryFolderItem()
+			    #endif
 			    
 			  catch e As Xojo.IO.IOException
 			    Raise e
